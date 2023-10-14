@@ -44,7 +44,7 @@ play.addEventListener('click', () => {
     pause.disabled = false;
     // pause.style.backgroundColor = '#0061e0'
 
-    // reset.disabled = false;
+    reset.disabled = false;
     // reset.style.backgroundColor = '#0061e0'
 
 
@@ -132,10 +132,10 @@ pause.addEventListener('click', () => {
     clearInterval(hoursInterval);
 
     pause.disabled = true;
-    // pause.style.backgroundColor = '#979797'
+   
 
     play.disabled = false;
-    // play.style.backgroundColor = '#0061e0'
+    
 
 });
 
@@ -158,23 +158,20 @@ reset.addEventListener('click', () => {
     milliSecBox.innerHTML = `0${milliSec}`;
     secondsBox.innerHTML = `0${seconds}`;
     minutesBox.innerHTML = `0${minutes}`;
-    hoursBox.innerHTML = `0${hours}`;
-
+   
     splitRecord.innerHTML = " ";
 
 
     // play.disabled = false;
-    // play.style.backgroundColor = '#0061e0'
+   
 
     // pause.disabled = true;
-    // pause.style.backgroundColor = '#979797'
 
     // split.disabled = true;
-    // split.style.backgroundColor = '#979797'
+   
 
-    // reset.disabled = true;
-    // reset.style.backgroundColor = '#979797'
-
+    reset.disabled = true;
+    
 })
 
 
@@ -184,5 +181,5 @@ reset.addEventListener('click', () => {
 let count = 0;
 split.addEventListener('click', () => {
     count += 1
-    splitRecord.innerHTML += `<span id="count"> #${count} </span> &nbsp; &nbsp; &nbsp; &nbsp; ${minutes}:${seconds}:${milliSec} </br>`
+    splitRecord.innerHTML += `<span id="count"> </br> #${count} </span> &nbsp; &nbsp; &nbsp; &nbsp; ${minutes}:${seconds}:${milliSec} </br>`
 })
