@@ -1,12 +1,12 @@
-const hoursBox = document.querySelector('#hours');
-const minutesBox = document.querySelector('#minutes');
-const secondsBox = document.querySelector('#seconds');
-const milliSecBox = document.querySelector('#milli-sec');
+// const hoursBox = document.querySelector('#hours');
+const minutesBox = document.querySelector('#minuts');
+const secondsBox = document.querySelector('#second');
+const milliSecBox = document.querySelector('#milisecond');
 
-const play = document.querySelector('#play');
-const split = document.querySelector('#split');
-const pause = document.querySelector('#pause');
-const reset = document.querySelector('#reset');
+const play = document.querySelector('.start');
+const pause = document.querySelector('.stop');
+const reset = document.querySelector('.reset');
+const split = document.querySelector('.split');
 
 const splitRecord = document.querySelector('#split-record');
 
