@@ -136,6 +136,7 @@ pause.addEventListener('click', () => {
 
     play.disabled = false;
     
+    
 
 });
 
@@ -168,8 +169,9 @@ reset.addEventListener('click', () => {
     // pause.disabled = true;
 
     // split.disabled = true;
-   
-
+   split.disabled = false;
+    // split.style.backgroundColor = '#0061e0'
+    splitRecord.innerHTML =`<button class="p-3 bg-red-600"><i class="fa-solid fa-scissors fa-beat-fade"></i> Split</button>`
     reset.disabled = true;
     
 })
